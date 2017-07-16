@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Numérotation d'une plaque d'immatriculation Française</title>
+	<link href="style.css" rel="stylesheet" type="text/css" media="screen"/>
+	<script src="code.js" type="text/javascript" > </script>
+</head>
+<body>
+<h1>Numérotation d'une plaque d'immatriculation Française</h1>
+<p>Les nouvelles immatriculations sont numérotées de la façon suivante : AA-001-AA.</p>
+<p>En France, certaines lettres sont exclues du système d’immatriculation comme le I, O ou U car elles sont trop ressemblantes au 1, 0 et du V. Ainsi nous avons 23 lettres et 999 numéros possibles. Cela représente donc plus de 277 977 744 combinaisons de plaques différentes en France.</p>
+<p>Sur le plan national, la numérotation s’effectue de la manière suivante :</p>
+<ul>
+<li>AA-001-AA à AA-999-AA (les chiffres s’incrémentent en premier)</li>
+<li>AA-001-AB à AA-999-AZ (puis la 2ème lettre à droite)</li>
+<li>AA-001-BA à AA-999-ZZ (puis la 1ère lettre à droite)</li>
+<li>AB-001-AA à AZ-999-ZZ (puis la 2ème lettre à gauche)</li>
+<li>BA-001-AA à ZZ-999-ZZ (puis la 1ère lettre à gauche)</li>
+</ul>
+
+
+<div id="conteneur">
+<div id="plateau"></div>
+<div id="count-immat">
+	<span id="chaine-2"></span>-<span id="compteur"></span>-<span id="chaine-1"></span>
+</div>
+</div>
+<em>Compteur pas de :<span id="ct_pas"></span> | Lettres : <span id="Lettres"></span></em>
+</body>
+</html>
